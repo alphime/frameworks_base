@@ -322,7 +322,7 @@ open class QSTileViewImpl @JvmOverloads constructor(
         labelContainer.invalidate()
         labelContainer.apply {
             ignoreLastView = collapsed
-            forceUnspecifiedMeasure = collapsed
+            forceUnspecifiedMeasure = true
         }
         secondaryLabel.alpha = if (collapsed) 0f else 1f
 
@@ -355,7 +355,7 @@ open class QSTileViewImpl @JvmOverloads constructor(
             labelContainer.invalidate()
             labelContainer.apply {
                 ignoreLastView = collapsed
-                forceUnspecifiedMeasure = collapsed
+                forceUnspecifiedMeasure = true
             }
             secondaryLabel.alpha = if (collapsed) 0f else 1f
         } else {
